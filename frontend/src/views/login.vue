@@ -3,16 +3,19 @@
     <div class="card">
       <div class="card-header">
         <div class="flex items-center justify-between">
-          <p class="card-title">Waikiki提醒您</p>
+          <p class="card-title">火柴提醒您</p>
         </div>
       </div>
       <div class="card-body text-base leading-6">
         <p>为了您的财产安全请关闭免密支付以及打开支付验密（京东-设置-支付设置-支付验密设置）。</p>
         <p>建议京东账户绑定微信以保证提现能到账。</p>
-        <p>由于京东异地登录限制，扫码获取cookie只有2小时有效期，因此暂时关闭扫码功能，现需手动抓取Cookie。</p>
-        <p>且有效期不长，平均3-5天，因此需要及时更新。</p>
-        <b>安全起见，WSCK可以在CK登录后录入，期限半永久。</b>
+       <p>建议登录后修改备注为自己QQ,并加Q群:699935945</p>
+       <a style="" href="https://qr.dingtalk.com/action/joingroup?code=v1,k1,DCC1kAGM9FkkBNPxJuuAshLK//V04kTOlmc4iJBBz2k=&_dt_no_comment=1&origin=11" target="_blank" id="waikiki">钉钉群直达</a>
+      <a style="" href="https://jq.qq.com/?_wv=1027&k=XbkLgMIN" target="_blank" id="waikiki">QQ群直达</a>
+
+       <b>安全起见，WSCK可以在CK登录后录入，期限半永久。</b>
       </div>
+
       <div class="card-footet"></div>
     </div>
 
