@@ -59,7 +59,7 @@ Ninja 仅支持 qinglong 2.8.2+
        tty: true
        ports:
          - 5700:5700
-   +      - 5701:5701
+         - 520:520
        environment:
          - ENABLE_HANGUP=true
          - ENABLE_WEB_PANEL=true
@@ -71,7 +71,7 @@ Ninja 仅支持 qinglong 2.8.2+
          - ./raw:/ql/raw
          - ./scripts:/ql/scripts
          - ./jbot:/ql/jbot
-   +      - ./ninja:/ql/ninja
+         - ./ninja:/ql/ninja
    ```
 
    例（docker-run）：
@@ -85,9 +85,9 @@ Ninja 仅支持 qinglong 2.8.2+
      -v $PWD/ql/raw:/ql/raw \
      -v $PWD/ql/scripts:/ql/scripts \
      -v $PWD/ql/jbot:/ql/jbot \
-   + -v $PWD/ql/ninja:/ql/ninja \
+     -v $PWD/ql/ninja:/ql/ninja \
      -p 5700:5700 \
-   + -p 5701:5701 \
+     -p 520:520 \
      --name qinglong \
      --hostname qinglong \
      --restart unless-stopped \

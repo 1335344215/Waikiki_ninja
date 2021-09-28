@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07294421-e7ab-4e81-a587-a1f115cff554" name="默认变更列表" comment="更改图标">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.env.example" afterDir="false" />
+    <list default="true" id="07294421-e7ab-4e81-a587-a1f115cff554" name="默认变更列表" comment="修改运行端口号为520">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1632641577435</updated>
       <workItem from="1632641579702" duration="1062000" />
-      <workItem from="1632808692842" duration="1351000" />
+      <workItem from="1632808692842" duration="1463000" />
     </task>
     <task id="LOCAL-00001" summary="修改页面提示">
       <created>1632642354218</created>
@@ -89,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632809813554</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="修改运行端口号为520">
+      <created>1632810081727</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1632810081727</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +118,7 @@
     <MESSAGE value="修改页面提示" />
     <MESSAGE value="增加推送二维码" />
     <MESSAGE value="更改图标" />
-    <option name="LAST_COMMIT_MESSAGE" value="更改图标" />
+    <MESSAGE value="修改运行端口号为520" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改运行端口号为520" />
   </component>
 </project>
