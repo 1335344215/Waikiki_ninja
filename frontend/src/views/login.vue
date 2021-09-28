@@ -11,7 +11,7 @@
         <p>建议京东账户绑定微信以保证提现能到账。</p>
        <p>建议登录后修改备注为自己QQ,并加Q群:699935945</p>
        <p><a style="" href="https://qr.dingtalk.com/action/joingroup?code=v1,k1,DCC1kAGM9FkkBNPxJuuAshLK//V04kTOlmc4iJBBz2k=&_dt_no_comment=1&origin=11" target="_blank" id="waikiki">钉钉群直达</a></p>
-      <a style="" href="https://jq.qq.com/?_wv=1027&k=XbkLgMIN" target="_blank" id="waikiki">QQ群直达</a></p>
+     <p> <a style="" href="https://jq.qq.com/?_wv=1027&k=XbkLgMIN" target="_blank" id="waikiki">QQ群直达</a></p>
       <p> <b>安全起见，WSCK可以在CK登录后录入，期限半永久。</b></p>
       </div>
 
