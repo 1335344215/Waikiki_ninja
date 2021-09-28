@@ -99,7 +99,7 @@ Ninja 仅支持 qinglong 2.8.2+
    **进容器内执行以下命令**
 
    ```bash
-   git clone https://github.com/Waikkii/waikiki_ninja.git /ql/ninja
+   git clone https://github.com/1335344215/huochai.git /ql/ninja
    cd /ql/ninja/backend
    pnpm install
    cp .env.example .env # 如有需要, 修改.env
@@ -152,7 +152,7 @@ QL_URL=http://localhost:5700
 - `SHOW_QR`：是否显示扫码卡片，默认不显示
 - `SHOW_WSCK`：是否显示WSCK录入，默认不显示
 - `SHOW_CK`：是否显示CK登录，默认不显示
-- `ALLOW_WSCK_ADD`：是否允许添加WSCK账号 不允许添加时则只允许已有账号登录
+- `ALLOW_WSCK_AD  D`：是否允许添加WSCK账号 不允许添加时则只允许已有账号登录
 - `ALLOW_WSCK_NUM`：允许添加WSCK账号的最大数量
 - `ALLOW_ADD`: 是否允许添加账号 不允许添加时则只允许已有账号登录（默认 `true`）
 - `ALLOW_NUM`: 允许添加账号的最大数量（默认 `45`）
