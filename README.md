@@ -95,6 +95,9 @@ Ninja 仅支持 qinglong 2.8.2+
    ```
 
 2. 进容器内执行以下命令
+   ```
+   docker  exec  -it qinglong bash
+   ```
 
    **进容器内执行以下命令**
 
