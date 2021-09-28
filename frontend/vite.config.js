@@ -1,6 +1,6 @@
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
-import { defineConfig } from 'vite'
+import {defineConfig} from 'vite'
 import AsyncCatch from 'vite-plugin-async-catch'
 import styleImport from 'vite-plugin-style-import'
 
@@ -8,7 +8,7 @@ import styleImport from 'vite-plugin-style-import'
 export default defineConfig({
   plugins: [
     vue(),
-    AsyncCatch({ catchCode: `console.error(e)` }),
+    AsyncCatch({catchCode: `console.error(e)`}),
     styleImport({
       libs: [
         {
