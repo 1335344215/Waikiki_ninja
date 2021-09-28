@@ -211,7 +211,7 @@ module.exports = class User {
         this.eid = body.data[0]._id;
         this.timestamp = body.data[0].timestamp;
         message = `注册成功，${this.nickName}`;
-        this.#sendNotify('Ninja 运行通知', `用户 ${this.nickName}(${decodeURIComponent(this.pt_pin)}) 已上线`);
+        this.#sendNotify('火柴提醒您', `用户 ${this.nickName}(${decodeURIComponent(this.pt_pin)}) 已上线`);
       }
     } else {
       this.eid = env._id;
@@ -221,7 +221,7 @@ module.exports = class User {
       }
       this.timestamp = body.data.timestamp;
       message = `欢迎回来，${this.nickName}`;
-      this.#sendNotify('Ninja 运行通知', `用户 ${this.nickName}(${decodeURIComponent(this.pt_pin)}) 已更新 CK`);
+      this.#sendNotify('火柴提醒您', `用户 ${this.nickName}(${decodeURIComponent(this.pt_pin)}) 已更新 CK`);
     }
     return {
       nickName: this.nickName,
@@ -282,7 +282,7 @@ module.exports = class User {
     if (body.code !== 200) {
       throw new UserError(body.message || '删除账户错误，请重试', 240, body.code || 200);
     }
-    this.#sendNotify('Ninja 运行通知', `用户 ${this.nickName}(${decodeURIComponent(this.pt_pin)}) 删号跑路了`);
+    this.#sendNotify('火柴提醒您', `用户 ${this.nickName}(${decodeURIComponent(this.pt_pin)}) 删号跑路了`);
     return {
       message: '账户已移除',
     };
@@ -311,7 +311,7 @@ module.exports = class User {
         this.wseid = body.data[0]._id;
         this.timestamp = body.data[0].timestamp;
         message = `录入成功，${this.pin}`;
-        this.#sendNotify('Ninja 运行通知', `用户 ${this.pin} WSCK 添加成功`);
+        this.#sendNotify('火柴提醒您', `用户 ${this.pin} WSCK 添加成功`);
       }
     } else {
       this.wseid = env._id;
@@ -321,7 +321,7 @@ module.exports = class User {
       }
       this.timestamp = body.data.timestamp;
       message = `欢迎回来，${this.nickName}`;
-      this.#sendNotify('Ninja 运行通知', `用户 ${this.pin} 已更新 WSCK`);
+      this.#sendNotify('火柴提醒您', `用户 ${this.pin} 已更新 WSCK`);
     }
 
 
@@ -386,7 +386,7 @@ module.exports = class User {
     if (body.code !== 200) {
       throw new UserError(body.message || '删除账户错误，请重试', 240, body.code || 200);
     }
-    this.#sendNotify('Ninja 运行通知', `用户 ${this.remark}(${decodeURIComponent(this.remark)}) 删号跑路了,CK将无法自动更新并会在不知道那天内自动失效`);
+    this.#sendNotify('火柴提醒您', `用户 ${this.remark}(${decodeURIComponent(this.remark)}) 删号跑路了,CK将无法自动更新并会在不知道那天内自动失效`);
     return {
       message: 'wskey账户已移除',
     };
