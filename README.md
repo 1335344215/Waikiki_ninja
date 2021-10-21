@@ -228,3 +228,59 @@ docker exec -it qinglong bash -c "apk add python3 zlib-dev gcc jpeg-dev python3-
 docker exec -it qinglong bash -c "cd /qinglong/scripts/ && apk add --no-cache build-base g++ cairo-dev pango-dev giflib-dev && npm i && npm i -S ts-node typescript @types/node date-fns axios png-js canvas --build-from-source"
 
 ```
+###部分大佬的库脚本是TS后缀，青龙面板并不能支持运行
+一：青龙面板添加TS后缀脚本指令，拉库才能拉到TS脚本
+
+打开面板，选择配置文件（config.sh）找到修改为
+```
+## ql repo命令拉取脚本时需要拉取的文件后缀，直接写文件后缀名即可
+RepoFileExtensions="js py ts"
+```
+###二：进入服务器后台（连接SSH）
+***依次输入下面的代码安装依赖：
+```
+ docker exec -it qinglong bash
+ npm i -g ts-node typescript @types/node date-fns axios
+ ```
+***依赖安装完成后再修改青龙task.sh支持ts-node运行方式
+
+依次输入下面的代码完成修改：
+```
+ docker exec -it qinglong bash
+cd shell/   
+nano task.sh    #如果提示没有nano 可以执行 apk add nano或者使用vi task.sh
+找到define_program，修改成如下，保存（按ctrl+x 输入Y或者X Y保存 X不保存）
+define_program() {
+    local p1=$1
+    if [[ $p1 == *.js ]]; then
+        which_program="node"
+    elif [[ $p1 == *.py ]]; then
+        which_program="python3"
+    elif [[ $p1 == *.ts ]]; then
+        which_program="ts-node"
+    elif [[ $p1 == *.sh ]]; then
+        which_program="bash"
+    else
+        which_program=""
+    fi
+}
+```
+###一些其他的方法以及依赖：
+```
+运行ts方式
+1.全局安装ts-node
+npm install ts-node -g --save --unsafe-perm=true --allow-root
+2.运行ts脚本看报错
+ts-node xxx.ts
+3.看报错信息确认到底需要哪些依赖，安装相应依赖，目前发现有typescript,fs,axios
+npm install typescript
+npm install fs
+npm install axios
+4.再运行相应脚本，一般会成功了
+ts-node xxxx.ts
+依赖：
+npm install date-fns
+npm install require
+npm i –save-dev @types/node
+npm install tslib
+```
